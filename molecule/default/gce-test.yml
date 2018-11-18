@@ -1,0 +1,23 @@
+---
+# Example Playbook
+- name: Compute Engine Instance Examples
+  hosts: localhost
+  vars:
+    service_account_email: "ci-test@infra-219211.iam.gserviceaccount.com"
+    credentials_file: "/home/alf/infra-219211-ci-test.json"
+    project_id: "infra-219211"
+  tasks:
+    - name: create multiple instances
+      # Basic provisioning example.  Create multiple Debian 8 instances in the
+      # us-central1-a Zone of n1-standard-1 machine type.
+      gce:
+        instance_names: test1
+        zone: europe-west1-b
+        machine_type: f1-micro
+        image: ubuntu-1604-xenial-v20170919
+        state: present
+        service_account_email: "{{ service_account_email }}"
+        credentials_file: "{{ credentials_file }}"
+        project_id: "{{ project_id }}"
+        service_account_permissions: cloud-platform
+      register: gce
