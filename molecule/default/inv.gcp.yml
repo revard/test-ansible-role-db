@@ -1,0 +1,6 @@
+plugin: gcp_compute
+projects:
+  - google.com:infra-219211
+auth_kind: serviceaccount
+service_account_file: ~/infra-219211-ci-test.json
+
