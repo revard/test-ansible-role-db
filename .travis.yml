@@ -14,7 +14,6 @@ before_install:
   -in credentials.tar.gz.enc -out credentials.tar.gz -d
 - tar -xzvf credentials.tar.gz
 - date
-- gcloud auth application-default print-access-token
 - pwd
 - ls -l
 - mv google_compute_engine /home/travis/.ssh/
