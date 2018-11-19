@@ -1,7 +1,8 @@
-Role Name
+Test-ansible-role-db
 =========
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/revard_infra.svg?branch=master)]
 
-A brief description of the role goes here.
+Role for checking mongo db.
 
 Requirements
 ------------
