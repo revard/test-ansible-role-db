@@ -3,24 +3,15 @@
 - name: Compute Engine Instance Examples
   hosts: localhost
   vars:
-<<<<<<< HEAD
     service_account_email: "ci-test2@infra-219211.iam.gserviceaccount.com"
     credentials_file: "/home/travis/build/revard/test-ansible-role-db/client-secret.json"
-=======
-    service_account_email: "ci-test@infra-219211.iam.gserviceaccount.com"
-    credentials_file: "/home/alf/infra-219211-ci-test.json"
->>>>>>> 1cbfbf798476987024e2b48375aa738e4a098e9f
     project_id: "infra-219211"
   tasks:
     - name: create multiple instances
       # Basic provisioning example.  Create multiple Debian 8 instances in the
       # us-central1-a Zone of n1-standard-1 machine type.
       gce:
-<<<<<<< HEAD
         instance_names: test-gce1
-=======
-        instance_names: test1
->>>>>>> 1cbfbf798476987024e2b48375aa738e4a098e9f
         zone: europe-west1-b
         machine_type: f1-micro
         image: ubuntu-1604-xenial-v20170919
@@ -28,9 +19,3 @@
         service_account_email: "{{ service_account_email }}"
         credentials_file: "{{ credentials_file }}"
         project_id: "{{ project_id }}"
-<<<<<<< HEAD
-
-=======
-        service_account_permissions: cloud-platform
-      register: gce
->>>>>>> 1cbfbf798476987024e2b48375aa738e4a098e9f

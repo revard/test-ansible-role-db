@@ -4,14 +4,10 @@ python:
 install:
 - pip install ansible==2.4.0 molecule apache-libcloud pycrypto
 script:
-<<<<<<< HEAD
 - ansible-playbook -vvv molecule/default/gce-test.yml
         #- molecule --debug create
 #- molecule converge
 #- molecule verify
-=======
-- molecule --debug create
->>>>>>> 1cbfbf798476987024e2b48375aa738e4a098e9f
 after_script:
         #- molecule --debug destroy
 before_install:
