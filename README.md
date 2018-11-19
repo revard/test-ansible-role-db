@@ -1,6 +1,6 @@
 Test-ansible-role-db
 =========
-[![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/revard_infra.svg?branch=master)]
+![Build Status](https://travis-ci.com/Otus-DevOps-2018-09/revard_infra.svg?branch=master)
 
 Role for checking mongo db.
 
