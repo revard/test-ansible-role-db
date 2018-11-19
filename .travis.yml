@@ -2,7 +2,7 @@ language: python
 python:
 - '2.7'
 install:
-- pip install ansible==2.4.0 molecule apache-libcloud pycrypto
+- pip install ansible==2.5.0 molecule apache-libcloud pycrypto
 script:
 - molecule --debug create
   #- molecule converge
